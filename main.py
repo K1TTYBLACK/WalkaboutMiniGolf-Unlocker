@@ -66,8 +66,10 @@ def unlock_balls():
         return
 
     replacements_balls = {
-        "48617356616c7565000009": "48617356616c7565000109",
-        "56616c756500ffffffffffffffffff08": "56616c75650000000000000000000008"
+        "48 61 73 56 61 6c 75 65 00 00 09".replace(" ", ""):
+        "48 61 73 56 61 6c 75 65 00 01 09".replace(" ", ""),
+        "56 61 6c 75 65 00 ff ff ff ff ff ff ff ff 08".replace(" ", ""):
+        "56 61 6c 75 65 00 00 00 00 00 00 00 00 00 08".replace(" ", "")
     }
 
     changes = modify_hex_section(
@@ -83,7 +85,7 @@ def select_file():
 
 # Create GUI window
 root = tk.Tk()
-root.title("WMG: Putters & Balls Unlocker by K1TTYBLACK")
+root.title("WMG: Balls & Putters Unlocker by K1TTYBLACK")
 root.geometry("600x250")
 
 file_path = tk.StringVar()
