@@ -47,7 +47,7 @@ chmod +x WMG_BP
    ```
 
 ## 🎮 Usage
-1. **Disable internet on your device.**
+1. Quit game if open and **disable internet on your device.**
 2. **Copy and Backup your game data folder!**
    - **Steam:** `%USERPROFILE%\AppData\LocalLow\Mighty Coconut\Walkabout Mini Golf`
    - **Android/Meta Quest:** `Android/data/com.MightyCoconut.WalkaboutMiniGolf`
