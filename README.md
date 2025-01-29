@@ -17,6 +17,7 @@ This application unlocks all balls and putters in the game **Walkabout Mini Golf
 ### 🏠 Windows
 1. Download the latest release from [releases page](https://github.com/K1TTYBLACK/WalkaboutMiniGolf-Unlocker/releases).
 2. Run the executable `WMG:BP.exe`.
+3. Windows SmartScreen might prevent you from running this program because it has no signed publisher - just click "Run anyway"
 
 ### 🐧 Linux
 1. Download the latest release from [releases page](https://github.com/K1TTYBLACK/WalkaboutMiniGolf-Unlocker/releases).
