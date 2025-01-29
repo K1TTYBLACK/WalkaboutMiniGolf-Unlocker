@@ -1,6 +1,6 @@
 # 🏌️ Walkabout Mini Golf: Balls & Putters Unlocker by K1TTYBLACK
 
-This application unlocks all balls and putters in the game *Walkabout Mini Golf*.
+This application unlocks all balls and putters in the game **Walkabout Mini Golf** *(any platform)*.
 
 ## ⚠️ Warning
 
@@ -9,16 +9,18 @@ This application unlocks all balls and putters in the game *Walkabout Mini Golf*
 - Ensure to backup your data
 - Use at your own risk; this application may violate game terms of service.
 - This project is for educational purposes only.
+- **This program will also unlock secret putters as well as future balls & putters**
+- **Tested on game version 5.6 (build 37174) for Meta Quest Standalone**
 
 ## 📂 Download
 
 ### 🐧 Linux
 1. Download the latest release from releases page.
-2. Run the executable in terminal `./WMG:B&P`.
+2. Run the executable in terminal `./WMG:BP`.
 
 ### 🏠 Windows
 1. Download the latest release from releases page.
-2. Run the executable `WMG:B&P.exe`.
+2. Run the executable `WMG:BP.exe`.
 
 ### 🍏 Alternative (macOS, Linux, Windows & other systems)
 1. Install Python and pip if not already installed.
@@ -38,15 +40,17 @@ This application unlocks all balls and putters in the game *Walkabout Mini Golf*
 
 ## 🎮 Usage
 1. **Disable internet on your device.**
-2. **Backup your game data folder!**
+2. **Copy and Backup your game data folder!**
    - **Steam:** `%USERPROFILE%\AppData\LocalLow\Mighty Coconut\Walkabout Mini Golf`
    - **Android/Meta Quest:** `Android/data/com.MightyCoconut.WalkaboutMiniGolf`
-3. Copy `Player_XXXXXXX.data` to a destination you prefer.
-4. Import this file into the program.
-5. The program will **backup the file** and create a **modified one** under the same name.
-6. Paste this file to destination: `*golf folder*/Profiles/XXXXXXXXXXXX/`
+3. In copied folder copy `files/Profiles/Oculus/XXXXXXXXXXXXX/Player_XXXXXXX.data` to a destination you prefer. Path may be different depending on what device game is installed. This example is for Meta Quest Standalone
+4. Launch program 
+4. Import 'Player_XXXXXXX.data' into the program.
+5. The program will **backup the file** and create a **modified one** under the **same name**.
+6. Replace modified file to destination where you got original file from. Do not create any copies inside this destination - just replace original one.
 7. Run the game and verify that everything is unlocked.
 8. **Enable internet while in-game and try joining a multiplayer match.**
+9. **Restart the game to ensure that progress is saved on Walkabout servers**
 
 ## 📚 License
 This project is licensed under a **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** license.

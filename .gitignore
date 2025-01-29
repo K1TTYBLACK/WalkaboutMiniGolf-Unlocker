@@ -10,7 +10,6 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
 egg-info/
 .installed.cfg
 *.egg
@@ -51,8 +50,10 @@ logs/
 .DS_Store
 Thumbs.db
 
+# Specifics
 venv/
 main.spec
 python-installer.exe
 build/
 dist/python-3.10.11-amd64.exe
+.gitignore
