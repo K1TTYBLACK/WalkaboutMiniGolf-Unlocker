@@ -20,7 +20,10 @@ This application unlocks all balls and putters in the game **Walkabout Mini Golf
 
 ### 🐧 Linux
 1. Download the latest release from [releases page](https://github.com/K1TTYBLACK/WalkaboutMiniGolf-Unlocker/releases).
-2. Run the executable in terminal `./WMG:BP`.
+2. Make file executable `chmod +x WMG_BP`
+3. Run the executable in terminal `./WMG:BP`.
+
+*or run this:*
 ```sh
 curl -L -o WMG_BP https://github.com/K1TTYBLACK/WalkaboutMiniGolf-Unlocker/raw/refs/heads/main/dist/WMG_BP
 chmod +x WMG_BP
@@ -32,7 +35,7 @@ chmod +x WMG_BP
 2. Clone the repository:
    ```sh
    git clone https://github.com/K1TTYBLACK/WalkaboutMiniGolf-Unlocker.git
-   cd walkabout-unlocker
+   cd WalkaboutMiniGolf-Unlocker
    ```
 3. Install dependencies:
    ```sh
