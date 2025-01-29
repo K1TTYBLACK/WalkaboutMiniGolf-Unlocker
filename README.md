@@ -16,19 +16,19 @@ This application unlocks all balls and putters in the game **Walkabout Mini Golf
 
 ### 🏠 Windows
 1. Download the latest release from [releases page](https://github.com/K1TTYBLACK/WalkaboutMiniGolf-Unlocker/releases).
-2. Run the executable `WMG:BP.exe`.
+2. Run the executable `WMG_BP_windows.exe`.
 3. Windows SmartScreen might prevent you from running this program because it has no signed publisher - just click "Run anyway"
 
 ### 🐧 Linux
 1. Download the latest release from [releases page](https://github.com/K1TTYBLACK/WalkaboutMiniGolf-Unlocker/releases).
-2. Make file executable `chmod +x WMG_BP`
-3. Run the executable in terminal `./WMG:BP`.
+2. Make file executable `chmod +x WMG_BP_linux`
+3. Run the executable in terminal `./WMG_BP_linux`.
 
 *or run this:*
 ```sh
-curl -L -o WMG_BP https://github.com/K1TTYBLACK/WalkaboutMiniGolf-Unlocker/raw/refs/heads/main/dist/WMG_BP
-chmod +x WMG_BP
-./WMG_BP
+curl -L -o WMG_BP_linux https://github.com/K1TTYBLACK/WalkaboutMiniGolf-Unlocker/raw/refs/heads/main/dist/WMG_BP_linux
+chmod +x WMG_BP_linux
+./WMG_BP_linux
 ```
 
 ### 🍏 Alternative (macOS, Linux, Windows & other systems)
@@ -53,7 +53,7 @@ chmod +x WMG_BP
    - **Steam:** `%USERPROFILE%\AppData\LocalLow\Mighty Coconut\Walkabout Mini Golf`
    - **Android/Meta Quest:** `Android/data/com.MightyCoconut.WalkaboutMiniGolf`
 3. In copied folder copy `files/Profiles/Oculus/XXXXXXXXXXXXX/Player_XXXXXXX.data` to a destination you prefer. Path may be different depending on what device game is installed. This example is for Meta Quest Standalone
-4. Launch program 
+4. Launch program **WMG: Balls & Putters Unlocker**
 4. Import 'Player_XXXXXXX.data' into the program. You will see your profile's username.
 5. Click on "Unlock Putters" and/or "Unlock Balls". The program will **backup original file** and create a **modified one** under the **same name**.
 6. Replace modified file to destination **where you got original file from**. Do not create any copies inside this destination - just replace original one.

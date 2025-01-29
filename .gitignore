@@ -43,7 +43,7 @@ logs/
 
 # Specifics
 venv/
-WMG_BP.spec
+*.spec
 build.sh
 python-installer.exe
 build/
