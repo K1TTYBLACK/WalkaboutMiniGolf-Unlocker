@@ -54,9 +54,9 @@ chmod +x WMG_BP
    - **Android/Meta Quest:** `Android/data/com.MightyCoconut.WalkaboutMiniGolf`
 3. In copied folder copy `files/Profiles/Oculus/XXXXXXXXXXXXX/Player_XXXXXXX.data` to a destination you prefer. Path may be different depending on what device game is installed. This example is for Meta Quest Standalone
 4. Launch program 
-4. Import 'Player_XXXXXXX.data' into the program.
-5. The program will **backup the file** and create a **modified one** under the **same name**.
-6. Replace modified file to destination where you got original file from. Do not create any copies inside this destination - just replace original one.
+4. Import 'Player_XXXXXXX.data' into the program. You will see your profile's username.
+5. Click on "Unlock Putters" and/or "Unlock Balls". The program will **backup original file** and create a **modified one** under the **same name**.
+6. Replace modified file to destination **where you got original file from**. Do not create any copies inside this destination - just replace original one.
 7. Run the game and verify that everything is unlocked.
 8. **Enable internet while in-game and try joining a multiplayer match.**
 9. **Restart the game to ensure that progress is saved on Walkabout servers**

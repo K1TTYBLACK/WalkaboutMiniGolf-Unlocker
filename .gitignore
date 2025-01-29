@@ -43,7 +43,9 @@ logs/
 
 # Specifics
 venv/
-main.spec
+WMG_BP.spec
+build.sh
 python-installer.exe
 build/
+wmg_bp_version.txt
 dist/python-3.10.11-amd64.exe
