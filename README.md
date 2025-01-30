@@ -5,7 +5,7 @@ This application unlocks all balls and putters in the game **Walkabout Mini Golf
 
 ## ⚠️ Warning
 
-- **Finding balls and completing foxhunts are more enjoyable than using this app.**
+- **Hunting for balls and clues are more enjoyable than using this app.**
 - This app does **not** unlock paid courses.
 - Ensure to backup your data
 - Use at your own risk; this application may violate game terms of service.
