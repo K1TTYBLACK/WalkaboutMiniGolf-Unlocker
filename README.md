@@ -5,10 +5,10 @@ This application unlocks all balls and putters in the game **Walkabout Mini Golf
 
 ## ⚠️ Warning
 
-- **Hunting for balls and clues are more enjoyable than using this app.**
+- **Hunting for balls and clues are more enjoyable and rewarding than using this app.**
 - This app does **not** unlock paid courses.
 - Ensure to backup your data
-- Use at your own risk; this application may violate game terms of service.
+- Use at your own risk. This application may violate game's terms of service.
 - This project is for educational purposes only.
 - **This app will also unlock secret putters as well as future balls & putters**
 - **Tested on game version 5.6 (build 37174) for Meta Quest Standalone**
@@ -61,7 +61,7 @@ chmod +x WMG_BP_linux
 6. Replace modified file to destination **where you got original file from**. Do not create any copies inside this destination - just replace original one.
 7. Run the game and verify that everything is unlocked.
 8. **Enable internet while in-game and try joining a multiplayer match.**
-9. **Restart the game to ensure that progress is saved on Walkabout servers**
+9. **Restart the game to ensure that progress is saved on MightyCoconut servers**
 
 ## 📚 License
 This project is licensed under a **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** license.
