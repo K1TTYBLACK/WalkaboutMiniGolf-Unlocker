@@ -1,4 +1,4 @@
-# 🏌️ Walkabout Mini Golf: Balls & Putters Unlocker by K1TTYBLACK
+# 🏌️ Walkabout Mini Golf: Balls & Putters Unlocker by [K1TTYBLACK](https://horizon.meta.com/profile/112795680903761/?hwsh=HCaI4lqR4x)
 
 ![Preview Image](preview.jpg)
 
