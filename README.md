@@ -1,6 +1,7 @@
 # 🏌️ Walkabout Mini Golf: Balls & Putters Unlocker by K1TTYBLACK
 
 ![Preview Image](preview.jpg)
+[![Watch the video](https://img.youtube.com/vi/DVl7t_ED4pg/0.jpg)](https://www.youtube.com/watch?v=DVl7t_ED4pg)
 This application unlocks all balls and putters in **Walkabout Mini Golf** *(any platform)*.
 
 ## ⚠️ Warning
