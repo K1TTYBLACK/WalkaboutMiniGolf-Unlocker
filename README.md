@@ -3,7 +3,7 @@
 ![Preview Image](preview.jpg)
 
 This application unlocks all balls and putters in **Walkabout Mini Golf** *(any platform)*.
-Video tutorial: https://www.youtube.com/watch?v=DVl7t_ED4pg
+- Video tutorial: https://www.youtube.com/watch?v=DVl7t_ED4pg
 
 ## ⚠️ Warning
 
