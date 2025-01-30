@@ -1,16 +1,18 @@
 # 🏌️ Walkabout Mini Golf: Balls & Putters Unlocker by K1TTYBLACK
 
 ![Preview Image](preview.jpg)
-This application unlocks all balls and putters in the game **Walkabout Mini Golf** *(any platform)*.
+This application unlocks all balls and putters in **Walkabout Mini Golf** *(any platform)*.
 
 ## ⚠️ Warning
 
 - **Hunting for balls and clues are more enjoyable and rewarding than using this app.**
-- This app does **not** unlock paid courses.
 - Ensure to backup your data
 - Use at your own risk. This application may violate game's terms of service.
 - This project is for educational purposes only.
-- **This app will also unlock secret putters as well as future balls & putters**
+
+## 📝 Notes
+- This app **does not** unlock paid courses.
+- **This app also unlocks secret putters as well as future balls & putters**
 - **Tested on game version 5.6 (build 37174) for Meta Quest Standalone**
 
 ## 📂 Download
@@ -49,19 +51,20 @@ chmod +x WMG_BP_linux
    ```
 
 ## 🎮 Usage
-1. Quit game if open and **disable internet on your device.**
-2. **Copy and Backup your game data folder!**
+1. Quit game if open
+2. **IMPORTANT: Disable internet on your device.**
+3. **Copy and Backup your game data folder!**
    - **Android/Quest:** `Android/data/com.MightyCoconut.WalkaboutMiniGolf`
    - **Steam/Quest Link:** `%USERPROFILE%\AppData\LocalLow\Mighty Coconut\Walkabout Mini Golf`
    - **iOS:** `no idea, find yourself`
 4. In copied folder copy `files/Profiles/Oculus/XXXXXXXXXXXXX/Player_XXXXXXX.data` to a destination you prefer. Path may be different depending on what device game is installed. This example is for Meta Quest Standalone
 5. Launch **WMG: BP** application 
-4. Import 'Player_XXXXXXX.data' into the program. You will see your profile's username.
-5. Click on "Unlock Putters" and/or "Unlock Balls". The program will **backup original file** and create a **modified one** under the **same name**.
-6. Replace modified file to destination **where you got original file from**. Do not create any copies inside this destination - just replace original one.
-7. Run the game and verify that everything is unlocked.
-8. **Enable internet while in-game and try joining a multiplayer match.**
-9. **Restart the game to ensure that progress is saved on MightyCoconut servers**
+6. Import 'Player_XXXXXXX.data' into the program. You will see your profile's username.
+7. Click on "Unlock Putters" and/or "Unlock Balls". The program will **backup original file** and create a **modified one** under the **same name**.
+8. Replace modified file to destination **where you got original file from**. Do not create any copies inside this destination - just replace original one.
+9. Run the game and verify that everything is unlocked.
+10. **Enable internet while in-game and try joining a multiplayer match.**
+11. **Restart the game to ensure that progress is saved on MightyCoconut servers**
 
 ## 📚 License
 This project is licensed under a **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** license.
