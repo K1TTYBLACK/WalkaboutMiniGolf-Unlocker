@@ -12,8 +12,8 @@ This application unlocks all balls and putters in **Walkabout Mini Golf** *(any 
 ## ⚠️ Warning
 
 - **Hunting for balls and clues is more enjoyable and rewarding than using this app.**
-- **This app also unlocks secret putters as well as future balls & putters**
-- **Tested on game version 5.6 (build 37174) for Meta Quest Standalone**
+- **This app can unlock secret putters.** No need to use this app again after game update. Everything new should be unlocked.
+- Tested on game version 5.6 (build 37174) for Meta Quest Standalone
 - Ensure to backup your data
 - Use at your own risk. This application may violate game's terms of service. This project is for educational purposes only.
 
