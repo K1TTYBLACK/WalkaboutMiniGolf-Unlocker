@@ -1,21 +1,21 @@
 # 🏌️ Walkabout Mini Golf: Balls & Putters Unlocker by [K1TTYBLACK](https://horizon.meta.com/profile/112795680903761/)
 
-![Preview Image](preview.jpg)
+![Preview Image](images/preview.jpg)
 
 This application unlocks all balls and putters in **Walkabout Mini Golf** *(any platform)*.
 - Video tutorial: https://www.youtube.com/watch?v=DVl7t_ED4pg
 
+## ⚠️ UPDATED
+- There 5 extra putters that I haven't noticed before: screwdriver, hammer, pencil, saw and picaxe. You can find them near logs to the right side of main menu
+![Preview Image 2](images/preview2.png)
+
 ## ⚠️ Warning
 
 - **Hunting for balls and clues is more enjoyable and rewarding than using this app.**
-- Ensure to backup your data
-- Use at your own risk. This application may violate game's terms of service.
-- This project is for educational purposes only.
-
-## 📝 Notes
-- This app **does not** unlock paid courses.
 - **This app also unlocks secret putters as well as future balls & putters**
 - **Tested on game version 5.6 (build 37174) for Meta Quest Standalone**
+- Ensure to backup your data
+- Use at your own risk. This application may violate game's terms of service. This project is for educational purposes only.
 
 ## 📂 Download
 
