@@ -1,3 +1,6 @@
+import subprocess
+import platform
+import sys
 import tkinter as tk
 from tkinter import ttk
 import string
@@ -225,12 +228,64 @@ class App(ttk.Frame):
             self.proceed_unlock.config(style="TButton")
 
 
+def get_system_theme():
+    system = platform.system()
+
+    # For Windows and macOS
+    if system in ["Windows", "Darwin"]:  # macOS
+        if system == "Darwin":
+            # macOS uses AppleScript to get system appearance (light or dark)
+            try:
+                theme = subprocess.check_output(
+                    ['osascript', '-e', 'tell application "System Events" to get dark mode of appearance preferences'],
+                    stderr=subprocess.DEVNULL
+                ).decode().strip()
+                return "dark" if theme == "true" else "light"
+            except:
+                return "light"  # Default to light if macOS can't detect it
+        else:
+            # Windows detects using ttk style (light or dark)
+            system_theme = root.tk.call("ttk::style", "theme", "use")
+            return "dark" if "dark" in system_theme.lower() else "light"
+
+    # For Linux (GNOME or other DEs)
+    elif system == "Linux":
+        # Check for GNOME (via gsettings)
+        try:
+            theme = subprocess.check_output(
+                "gsettings get org.gnome.desktop.interface color-scheme",
+                shell=True
+            ).decode().strip().replace("'", "")
+            return "dark" if "dark" in theme.lower() else "light"
+        except subprocess.CalledProcessError:
+            # If not GNOME, fallback to checking KDE, Unity, etc.
+            try:
+                # KDE (Plasma)
+                theme = subprocess.check_output(
+                    "plasmashell --version", shell=True, stderr=subprocess.DEVNULL
+                ).decode().strip()
+                return "dark" if "dark" in theme.lower() else "light"
+            except subprocess.CalledProcessError:
+                return "light"  # Default if unable to detect DE
+
+    return "light"  # Default to light for unknown systems
+
+
 if __name__ == "__main__":
     root = tk.Tk()
     root.title("WMG Unlocker by K1TTYBLACK")
     root.resizable(False, False)
-    root.tk.call("source", "azure.tcl")
-    root.tk.call("set_theme", "dark")
+    if getattr(sys, 'frozen', False):
+        azure_tcl_path = os.path.join(sys._MEIPASS, "azure.tcl")
+    else:
+        azure_tcl_path = 'azure.tcl'
+
+    root.tk.call("source", azure_tcl_path)
+    system_theme = get_system_theme()
+    if system_theme == "dark":
+        root.tk.call("set_theme", "dark")
+    else:
+        root.tk.call("set_theme", "light")
 
     app = App(root)
     app.pack(fill="both", expand=True)
