@@ -74,7 +74,7 @@ class App(ttk.Frame):
         if not self.hex_data:
             messagebox.showwarning("Warning", "Error reading save file!")
             return
-        ball_changes = 0
+        putters_changes = 0
         if self.unlock_putters.get():
             replacements_putters = {
                 "56 61 6c 75 65 00 00 08".replace(" ", ""):
@@ -82,9 +82,9 @@ class App(ttk.Frame):
                 "48 61 73 56 61 6c 75 65 00 00 09".replace(" ", ""):
                 "48 61 73 56 61 6c 75 65 00 01 09".replace(" ", "")
             }
-            ball_changes += self.modify_hex_section(
+            putters_changes += self.modify_hex_section(
                 "PuttersUnlocked", "CourseData", replacements_putters)
-        putter_changes = 0
+        balls_changes = 0
         if self.unlock_balls.get():
             replacements_balls = {
                 "48 61 73 56 61 6c 75 65 00 00 09".replace(" ", ""):
@@ -92,7 +92,7 @@ class App(ttk.Frame):
                 "56 61 6c 75 65 00 ff ff ff ff ff ff ff ff 08".replace(" ", ""):
                 "56 61 6c 75 65 00 00 00 00 00 00 00 00 00 08".replace(" ", "")
             }
-            putter_changes += self.modify_hex_section(
+            balls_changes += self.modify_hex_section(
                 "BallsFound", "BallPositions", replacements_balls)
         file_dir, file_name = self.file_dir, self.file_name.get()
         modified_dir = os.path.join(
@@ -102,7 +102,7 @@ class App(ttk.Frame):
         with open(modified_filename, "wb") as f:
             f.write(bytes.fromhex(self.hex_data))
         messagebox.showinfo(
-            "Success", f"Balls added: {ball_changes//2}, Putters added: {putter_changes//2}\n\nFile saved to:\n{os.path.join(self.file_dir, f'K1_UNLOCKED/{self.username}')}")
+            "Success", f"Balls added: {balls_changes//2}, Putters added: {putters_changes//2}\n\nFile saved to:\n{os.path.join(self.file_dir, f'K1_UNLOCKED/{self.username}')}")
 
     def get_profile_username(self):
         try:
