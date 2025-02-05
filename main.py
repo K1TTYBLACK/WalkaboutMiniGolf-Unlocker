@@ -1,6 +1,5 @@
 import darkdetect
-import subprocess
-import platform
+
 import sys
 import tkinter as tk
 from tkinter import ttk
@@ -43,11 +42,7 @@ class App(ttk.Frame):
 
     def modify_hex_section(self, start_marker, end_marker, replacements, max_changes=99999):
         try:
-            file_dir, file_name = self.file_dir, self.file_name.get()
-            modified_dir = os.path.join(
-                file_dir, f"K1_UNLOCKED/{self.username}")
-            os.makedirs(modified_dir, exist_ok=True)
-            modified_filename = os.path.join(modified_dir, file_name)
+
             start_pos = self.hex_data.find(start_marker.encode().hex())
             end_pos = self.hex_data.find(end_marker.encode().hex())
             if start_pos == -1 or end_pos == -1 or start_pos >= end_pos:
@@ -66,8 +61,7 @@ class App(ttk.Frame):
                         break
             self.hex_data = self.hex_data[:start_pos] + \
                 extracted_hex + self.hex_data[end_pos:]
-            with open(modified_filename, "wb") as f:
-                f.write(bytes.fromhex(self.hex_data))
+
             return changes
         except Exception as e:
             messagebox.showerror("Error", f"An error occurred: {e}")
@@ -83,19 +77,30 @@ class App(ttk.Frame):
         ball_changes = 0
         if self.unlock_putters.get():
             replacements_putters = {
-                "56616c7565000008": "56616c7565000108",
-                "48617356616c7565000009": "48617356616c7565000109"
+                "56 61 6c 75 65 00 00 08".replace(" ", ""):
+                "56 61 6c 75 65 00 01 08".replace(" ", ""),
+                "48 61 73 56 61 6c 75 65 00 00 09".replace(" ", ""):
+                "48 61 73 56 61 6c 75 65 00 01 09".replace(" ", "")
             }
             ball_changes += self.modify_hex_section(
                 "PuttersUnlocked", "CourseData", replacements_putters)
         putter_changes = 0
         if self.unlock_balls.get():
             replacements_balls = {
-                "48617356616c7565000009": "48617356616c7565000109",
-                "56616c756500ffffffffffffffff08": "56616c75650000000000000000000008"
+                "48 61 73 56 61 6c 75 65 00 00 09".replace(" ", ""):
+                "48 61 73 56 61 6c 75 65 00 01 09".replace(" ", ""),
+                "56 61 6c 75 65 00 ff ff ff ff ff ff ff ff 08".replace(" ", ""):
+                "56 61 6c 75 65 00 00 00 00 00 00 00 00 00 08".replace(" ", "")
             }
             putter_changes += self.modify_hex_section(
                 "BallsFound", "BallPositions", replacements_balls)
+        file_dir, file_name = self.file_dir, self.file_name.get()
+        modified_dir = os.path.join(
+            file_dir, f"K1_UNLOCKED/{self.username}")
+        os.makedirs(modified_dir, exist_ok=True)
+        modified_filename = os.path.join(modified_dir, file_name)
+        with open(modified_filename, "wb") as f:
+            f.write(bytes.fromhex(self.hex_data))
         messagebox.showinfo(
             "Success", f"Balls added: {ball_changes//2}, Putters added: {putter_changes//2}\n\nFile saved to:\n{os.path.join(self.file_dir, f'K1_UNLOCKED/{self.username}')}")
 
